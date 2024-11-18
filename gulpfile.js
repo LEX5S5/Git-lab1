@@ -42,10 +42,7 @@ gulp.task('sass-production', function () {
         .pipe(gulp.dest('./css'));
 });
 
-// Image Optimization Task
-gulp.task('images', () => {
-    return gulp.src('images/*')
-});
+
 
 // Zip Task with Directory Check
 gulp.task('zip', function () {
@@ -71,4 +68,4 @@ gulp.task('zip', function () {
 });
 
 // Default Task 
-gulp.task('default', gulp.series('sass-debug', 'images', 'zip'));
+gulp.task('default', gulp.series('sass-debug', 'zip'));
