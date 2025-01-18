@@ -9,20 +9,23 @@
     <title> головна сторінка</title>
     
     <link rel="stylesheet" href="/css/main.css">
+    <script defer="defer" src="bundle.js"></script>
 </head>
 <body>
     <header>
         <h1>Персональний сайт студента</h1>
-        <nav>
+        <!-- Кнопка для відкриття меню -->
+        <div class="menu-button" onclick="toggleMenu()">☰</div>
+        <!-- Меню -->
+        <nav class="menu">
             <ul>
-                <li><a href="/html/index.html">Головна</a></li>
-                <li><a href="/html/about.html">Про мене</a></li>
-                <li><a href="/html/hobbies.html">Мої захоплення</a></li>
-                <li><a href="/html/university.html">Мій ЗВО</a></li>
-                <li><a href="/html/contacts.html">Контакти</a></li>
-                <li><a href="/html/profession.html">Моя майбутня професія</a></li>
-                <li><a href="/html/group.html">Моя група</a></li>
-                
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><a href="hobbies.html">Мої захоплення</a></li>
+                <li><a href="university.html">Мій ЗВО</a></li>
+                <li><a href="profession.html">Моя професія</a></li>
+                <li><a href="group.html">Моя група</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
             </ul>
         </nav>
     </header>
@@ -32,8 +35,9 @@
             Одним із моїх улюблених жанрів є MMO (масові багатокористувацькі онлайн-ігри), де можна взаємодіяти з іншими гравцями, виконувати завдання і змагатися у великих масштабах. Ігри також допомагають мені відпочити після навчання і підтримувати баланс між роботою та дозвіллям.
             Крім ігор, я також люблю подорожувати. Подорожі дають можливість побачити нові місця, познайомитися з різними культурами і розширити світогляд. Це хобі дозволяє мені відкривати для себе щось нове і заряджатися позитивними емоціями.</p>
     </section>
-    <footer>
-        <p>Персональний сайт студента &copy; 2024</p>
-    </footer>
+    <!-- Кнопка "Догори" -->
+    <button id="scrollToTop" class="scroll-to-top" onclick="scrollToTop()">Догори</button>
+    <!-- Підключення JavaScript -->
+    
 </body>
 </html>

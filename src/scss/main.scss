@@ -1,81 +1,104 @@
+/* Основні стилі для сторінки */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-}
-
-header {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
-}
-
-nav{ 
+  
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  
+    .menu-button {
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: block;
+    }
+  }
+  
+  nav.menu {
+    display: none; /* Початково приховане */
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 10;
+  
+    &.show {
+      display: flex; /* Відображення при активності */
+    }
+  
     ul {
-    list-style: none;
-    padding: 0;
-    }
-}
-
-nav {
-    ul{
-        li{
-        display: inline;
-        margin-right: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+      li {
+        a {
+          text-decoration: none;
+          color: white;
+          text-align: center;
+          padding: 10px 0;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+  
+          &:hover {
+            background-color: #005fa3;
+          }
         }
+      }
     }
-}
-
-nav{
-     ul{ 
-        li{ 
-            a {
+  }
+  
+  /* Кнопка "Догори" */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
-            }   
-        }
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Прихована початково */
+    transition: opacity 0.3s;
+  
+    &:hover {
+      background-color: rgb(246, 11, 11);
     }
-}
-
-h1, h2 {
-    color: #333;
-}
-
-section {
+  }
+  
+  section {
     padding: 20px;
     background-color: white;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.profile-photo {
+  }
+  
+  .profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 30%;
     display: block;
     margin: 10px auto;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-ul{ 
-    li {
-    list-style-type: disc;
-    }
-}
+  }

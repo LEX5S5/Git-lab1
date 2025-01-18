@@ -2,38 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> головна сторінка</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" href="/css/main.css"> <!-- Підключення стилів -->
+    <script defer="defer" src="bundle.js"></script>
 </head>
 <body>
     <header>
         <h1>Персональний сайт студента</h1>
-        <nav>
+        <!-- Кнопка для відкриття меню -->
+        <div class="menu-button" onclick="toggleMenu()">☰</div>
+        <!-- Меню -->
+        <nav class="menu">
             <ul>
-                <li><a href="/html/index.html">Головна</a></li>
-                <li><a href="/html/about.html">Про мене</a></li>
-                <li><a href="/html/hobbies.html">Мої захоплення</a></li>
-                <li><a href="/html/university.html">Мій ЗВО</a></li>
-                <li><a href="/html/contacts.html">Контакти</a></li>
-                <li><a href="/html/profession.html">Моя майбутня професія</a></li>
-                <li><a href="/html/group.html">Моя група</a></li>
-                
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><a href="hobbies.html">Мої захоплення</a></li>
+                <li><a href="university.html">Мій ЗВО</a></li>
+                <li><a href="profession.html">Моя професія</a></li>
+                <li><a href="group.html">Моя група</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Основний контент сторінки -->
     <section id="home">
         <h2>Головна сторінка</h2>
-        <p>Вітаю вас на моєму персональному сайті! Мене звати Рузін Олексій, я студент Черкаського національного університету імені Богдана Хмельницького. Моя спеціальність — "Автоматизація та комп'ютерно-інтегровані технології", і я з захопленням вивчаю різноманітні аспекти цієї галузі, від програмування до автоматизації виробничих процесів. На цьому сайті ви зможете дізнатися більше про мене, мої інтереси та захоплення, а також про мої плани на майбутнє у професійній сфері. Сподіваюсь, вам буде цікаво переглянути цей контент і ви знайдете тут корисну інформацію. </p>
+        <p>Вітаю вас на моєму персональному сайті! Мене звати Рузін Олексій, я студент Черкаського національного університету імені Богдана Хмельницького. Моя спеціальність "Автоматизація та комп'ютерно-інтегровані технології", і я з захопленням вивчаю різноманітні аспекти цієї галузі, від програмування до автоматизації виробничих процесів. На цьому сайті ви зможете дізнатися більше про мене, мої інтереси та захоплення, а також про мої плани на майбутнє у професійній сфері. Сподіваюсь, вам буде цікаво переглянути цей контент і ви знайдете тут корисну інформацію.</p>
         <img src="photo_2024-10-07_12-37-13.jpg" alt="Фото автора" class="profile-photo">
     </section>
 
-   
+    <!-- Кнопка "Догори" -->
+    <button id="scrollToTop" class="scroll-to-top" onclick="scrollToTop()">Догори</button>
 
-    <footer>
-        <p>Персональний сайт студента &copy; 2024</p>
-    </footer>
+    
 </body>
 </html>

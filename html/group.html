@@ -8,20 +8,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> головна сторінка</title>
     <link rel="stylesheet" href="/css/main.css">
+    <script defer="defer" src="bundle.js"></script>
 </head>
 <body>
     <header>
         <h1>Персональний сайт студента</h1>
-        <nav>
+        <!-- Кнопка для відкриття меню -->
+        <div class="menu-button" onclick="toggleMenu()">☰</div>
+        <!-- Меню -->
+        <nav class="menu">
             <ul>
-                <li><a href="/html/index.html">Головна</a></li>
-                <li><a href="/html/about.html">Про мене</a></li>
-                <li><a href="/html/hobbies.html">Мої захоплення</a></li>
-                <li><a href="/html/university.html">Мій ЗВО</a></li>
-                <li><a href="/html/contacts.html">Контакти</a></li>
-                <li><a href="/html/profession.html">Моя майбутня професія</a></li>
-                <li><a href="/html/group.html">Моя група</a></li>
-                
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><a href="hobbies.html">Мої захоплення</a></li>
+                <li><a href="university.html">Мій ЗВО</a></li>
+                <li><a href="profession.html">Моя професія</a></li>
+                <li><a href="group.html">Моя група</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
             </ul>
         </nav>
     </header>
@@ -30,8 +33,9 @@
         <p>Я є студентом навчальної групи 3-В, яка об’єднує студентів зі спільними інтересами у галузі автоматизації та комп'ютерних технологій. Хоча ми не займаємося спільними проєктами на даний момент, ми активно підтримуємо один одного в навчанні, обмінюємось знаннями та досвідом. Така співпраця і взаємодопомога допомагає нам розвиватися в обраній професії та готуватися до майбутніх викликів в індустрії автоматизації.</p>
     </section>
 
-    <footer>
-        <p>Персональний сайт студента &copy; 2024</p>
-    </footer>
+    <!-- Кнопка "Догори" -->
+    <button id="scrollToTop" class="scroll-to-top" onclick="scrollToTop()">Догори</button>
+    <!-- Підключення JavaScript -->
+    
 </body>
 </html>

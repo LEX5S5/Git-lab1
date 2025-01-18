@@ -1,0 +1,2 @@
+(()=>{"use strict";var e,n=document.querySelector(".menu");window.addEventListener("resize",(function(){window.innerWidth>768&&n.classList.remove("show")})),document.querySelector(".menu-button").addEventListener("click",(function(){n.classList.toggle("show")})),e=document.getElementById("scrollToTop"),window.addEventListener("scroll",(function(){e.style.display=window.scrollY>300?"block":"none"})),e.addEventListener("click",(function(){window.scrollTo({top:0,behavior:"smooth"})}))})();
+//# sourceMappingURL=bundle.js.map
